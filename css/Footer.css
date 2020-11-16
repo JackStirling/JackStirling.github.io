@@ -1,0 +1,14 @@
+#bottom-stuff {
+
+    position: relative;
+}
+
+#bottom{
+
+    position: fixed; 
+    background:gray; 
+    width:100%;
+    bottom:0;
+}
+
+#search{height:5000px; overflow-y:scroll;}

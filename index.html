@@ -1,19 +1,28 @@
 <html>
 <head>
-	<script>
-		function onButtonClick()
-		{
-			alert("Hello World!");
-		}
-	</script>
+	<title> Welcome to my site!</title>
+	<link rel="stylesheet" type="text/css" href="css/header.css" />
 </head>
 
 <body>
-Hello
-
-<input onclick="onButtonClick();" type="button" value="Click Me"></input>
+<div id="header">
+	
+	
+	<div style="float:left">
+	<a href="index.html"> <img style="height: 5rem; width:5rem" src="images/logo.jpg">
+</a>
+	</div>
+	Hello and welcome to my site!
+	
+	<div style="float:right">
+	 <a href="index.html">Home</a> | <a href="projects.html"> Projects </a> | 
+	<a onmouseenter ="show('hobbies')"href="#" >Designer Proflie </a>
+	
+	</div>
+	</div>
 
 </body>
+
 
 
 </html>
