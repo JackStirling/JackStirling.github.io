@@ -1,24 +1,63 @@
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title> Welcome to my site!</title>
 	<link rel="stylesheet" type="text/css" href="css/header.css" />
+	
+	<style>
+.body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+</style>
+	
+
 </head>
 
 <body>
-<div id="header">
-	
-	
-	<div style="float:left">
-	<a href="index.html"> <img style="height: 5rem; width:5rem" src="images/logo.jpg">
-</a>
-	</div>
+<div div class="myheader" id="header" style="position absolute" >
+
+
+<div >
+<a href="index.html"> <img style="height: 5rem; width:5rem" src="images/logo.jpg"> </a>
 	Hello and welcome to my site!
 	
 	<div style="float:right">
 	 <a href="index.html">Home</a> | 
 <a href="projects.html"> Projects </a> | 
-	<a href="profile.html" >Designer Proflie </a>
+	<a href="profile.html" >Designer Proflie    </a>
 	
+</a>
+	</div>
+
+	</div>
+ 
 	</div>
 	 <div>
 	 <h3>On Scroll Sticky Header</h3>
@@ -35,7 +74,8 @@
 </div>
 	</div>
 	
-	<script>
+		<script>
+	
 	// When the user scrolls the page, execute myFunction
 window.onscroll = function() {myFunction()};
 
