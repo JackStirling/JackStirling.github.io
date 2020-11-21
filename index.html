@@ -4,10 +4,115 @@
 	<title> Welcome to my site!</title>
 	<link rel="stylesheet" type="text/css" href="css/header.css" />
 	<link rel="stylesheet" type="text/css" href="css/footer.css" />
+	<link rel="stylesheet" type="text/css" href="css/gallery.css" />
 	
 </head>
 
 <body>
+<style>
+/*slideshow*/
+.mySlides{
+display:none;
+
+}
+
+tag{
+vertical-align:middle;
+max-height: 500px
+}
+
+.slideshow-container{
+max-width: 1000px;
+position: relative;
+margin:auto;
+
+}
+
+.prev .next {
+cursor: pointer;
+position:absolute;
+top:50%;
+width:auto;
+padding:16px;
+margin-top:-22px;
+color:red;
+font-weight: bold;
+font-size: 18px;
+border-radius: 0 3px 3px 0;
+transition: 0.6s ease;
+
+
+}
+
+.next{
+	right:0;
+	border-radius:3px 0 0 3px;
+}
+.prev:hover, .next:hover{
+	background-color: rgba (0,0,0,0.8) 
+}
+
+.numberText{
+
+	color:blue /*000000*/
+	font-size:	12px;
+	padding: 8px 12px;
+	position:absolute;
+	top: 0;
+	}
+	
+.text{
+		color:blue /*000000*/;
+		font-size 15px;
+		padding: 8px 12px;
+		position:absolute;
+		bottom:8px;
+		width:100%;
+		text-align:center;
+		
+
+}
+
+.dot{
+	
+	height:15px;
+	width:15px;
+	margin:0 2px;
+	background-color: #bbb;
+	border-radius:50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+	}
+	
+.active{
+	background-color: #717171;
+	
+	
+}
+
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+	
+}
+@-webkit-keyframes fade{
+	from(opacity:.4)
+	to(opacity:1)
+}
+@keyframes fade{
+	from(opacity:.4)
+	to(opacity:1)
+}
+	
+	
+
+
+
+
+
+</style>
 <div div class="myheader" id="header">
 
 
@@ -29,44 +134,61 @@
 	</div>
  
 	</div>
-	<h2>Fixed Footer</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla. Et tortor at risus viverra adipiscing at in tellus. Facilisi cras fermentum odio eu. Vitae sapien pellentesque habitant morbi tristique senectus et. Maecenas ultricies mi eget mauris pharetra et ultrices neque ornare. Semper eget duis at tellus at urna. Mattis nunc sed blandit libero volutpat sed cras ornare arcu. Enim nunc faucibus a pellentesque sit amet porttitor eget. Non nisi est sit amet facilisis magna etiam tempor orci. Pretium fusce id velit ut tortor pretium viverra. Leo integer malesuada nunc vel risus commodo. Duis at tellus at urna condimentum mattis pellentesque. Pharetra sit amet aliquam id diam maecenas. Lacinia quis vel eros donec ac.
+	
+	
+	
+	<div class="slideshow-container">
+	
+	<div class="mySlides fade">
+		<div class="numberText"> 1/4</div>
+		<img src="images/test1.jpg" style="100%">
+		<div class="text"></div>
+	</div>
+	<div class="mySlides">
+		<div class="numberText"> 2/4</div>
+		<img src="images/test2.jpg" style="100%">
+		<div class="text"></div>
+	</div>
+	<div class="mySlides">
+		<div class="numberText"> 3/4</div>
+		<img src="images/test3.jpg" style="100%">
+		<div class="text"></div>
+		
+	</div>
+	<div class="mySlides">
+		<div class="numberText"> 4/4</div>
+		<img src="images/test4.jpg" style="100%">
+		<div class="text"></div>
+	</div>
+	
+		<a class = "prev" onclick="">&#10094;</a>
+		<a class = "next" onclick="">&#10095;</a>
+	</div>
 
-    Consectetur libero id faucibus nisl tincidunt eget. Donec ac odio tempor orci dapibus ultrices in. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Nibh venenatis cras sed felis eget velitLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla. Et tortor at risus viverra adipiscing at in tellus. Facilisi cras fermentum odio eu. Vitae sapien pellentesque habitant morbi tristique senectus et. Maecenas ultricies mi eget mauris pharetra et ultrices neque ornare. Semper eget duis at tellus at urna. Mattis nunc sed blandit libero volutpat sed cras ornare arcu. Enim nunc faucibus a pellentesque sit amet porttitor eget. Non nisi est sit amet facilisis magna etiam tempor orci. Pretium fusce id velit ut tortor pretium viverra. Leo integer malesuada nunc vel risus commodo. Duis at tellus at urna condimentum mattis pellentesque. Pharetra sit amet aliquam id diam maecenas. Lacinia quis vel eros donec ac.
+<br>
+<div style="text-align:center">
+<span class ="dot" onclick=""></span>
+<span class ="dot" onclick=""></span>
+<span class ="dot" onclick=""></span>
+<span class ="dot" onclick=""></span>
+</div>
+</br>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
-    Consectetur libero id faucibus nisl tincidunt eget. Donec ac odio tempor orci dapibus ultrices in. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Nibh venenatis cras sed felis eget velitLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla. Et tortor at risus viverra adipiscing at in tellus. Facilisi cras fermentum odio eu. Vitae sapien pellentesque habitant morbi tristique senectus et. Maecenas ultricies mi eget mauris pharetra et ultrices neque ornare. Semper eget duis at tellus at urna. Mattis nunc sed blandit libero volutpat sed cras ornare arcu. Enim nunc faucibus a pellentesque sit amet porttitor eget. Non nisi est sit amet facilisis magna etiam tempor orci. Pretium fusce id velit ut tortor pretium viverra. Leo integer malesuada nunc vel risus commodo. Duis at tellus at urna condimentum mattis pellentesque. Pharetra sit amet aliquam id diam maecenas. Lacinia quis vel eros donec ac.
-
-    Consectetur libero id faucibus nisl tincidunt eget. Donec ac odio tempor orci dapibus ultrices in. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Nibh venenatis cras sed felis eget velitLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla. Et tortor at risus viverra adipiscing at in tellus. Facilisi cras fermentum odio eu. Vitae sapien pellentesque habitant morbi tristique senectus et. Maecenas ultricies mi eget mauris pharetra et ultrices neque ornare. Semper eget duis at tellus at urna. Mattis nunc sed blandit libero volutpat sed cras ornare arcu. Enim nunc faucibus a pellentesque sit amet porttitor eget. Non nisi est sit amet facilisis magna etiam tempor orci. Pretium fusce id velit ut tortor pretium viverra. Leo integer malesuada nunc vel risus commodo. Duis at tellus at urna condimentum mattis pellentesque. Pharetra sit amet aliquam id diam maecenas. Lacinia quis vel eros donec ac.
-
-    Consectetur libero id faucibus nisl tincidunt eget. Donec ac odio tempor orci dapibus ultrices in. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Nibh venenatis cras sed felis eget velitLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla. Et tortor at risus viverra adipiscing at in tellus. Facilisi cras fermentum odio eu. Vitae sapien pellentesque habitant morbi tristique senectus et. Maecenas ultricies mi eget mauris pharetra et ultrices neque ornare. Semper eget duis at tellus at urna. Mattis nunc sed blandit libero volutpat sed cras ornare arcu. Enim nunc faucibus a pellentesque sit amet porttitor eget. Non nisi est sit amet facilisis magna etiam tempor orci. Pretium fusce id velit ut tortor pretium viverra. Leo integer malesuada nunc vel risus commodo. Duis at tellus at urna condimentum mattis pellentesque. Pharetra sit amet aliquam id diam maecenas. Lacinia quis vel eros donec ac.
-
-    Consectetur libero id faucibus nisl tincidunt eget. Donec ac odio tempor orci dapibus ultrices in. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Nibh venenatis cras sed felis eget velitLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla. Et tortor at risus viverra adipiscing at in tellus. Facilisi cras fermentum odio eu. Vitae sapien pellentesque habitant morbi tristique senectus et. Maecenas ultricies mi eget mauris pharetra et ultrices neque ornare. Semper eget duis at tellus at urna. Mattis nunc sed blandit libero volutpat sed cras ornare arcu. Enim nunc faucibus a pellentesque sit amet porttitor eget. Non nisi est sit amet facilisis magna etiam tempor orci. Pretium fusce id velit ut tortor pretium viverra. Leo integer malesuada nunc vel risus commodo. Duis at tellus at urna condimentum mattis pellentesque. Pharetra sit amet aliquam id diam maecenas. Lacinia quis vel eros donec ac.
-
-    Consectetur libero id faucibus nisl tincidunt eget. Donec ac odio tempor orci dapibus ultrices in. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Nibh venenatis cras sed felis eget velitLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla. Et tortor at risus viverra adipiscing at in tellus. Facilisi cras fermentum odio eu. Vitae sapien pellentesque habitant morbi tristique senectus et. Maecenas ultricies mi eget mauris pharetra et ultrices neque ornare. Semper eget duis at tellus at urna. Mattis nunc sed blandit libero volutpat sed cras ornare arcu. Enim nunc faucibus a pellentesque sit amet porttitor eget. Non nisi est sit amet facilisis magna etiam tempor orci. Pretium fusce id velit ut tortor pretium viverra. Leo integer malesuada nunc vel risus commodo. Duis at tellus at urna condimentum mattis pellentesque. Pharetra sit amet aliquam id diam maecenas. Lacinia quis vel eros donec ac.
-
-    Consectetur libero id faucibus nisl tincidunt eget. Donec ac odio tempor orci dapibus ultrices in. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Nibh venenatis cras sed felis eget velitLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla. Et tortor at risus viverra adipiscing at in tellus. Facilisi cras fermentum odio eu. Vitae sapien pellentesque habitant morbi tristique senectus et. Maecenas ultricies mi eget mauris pharetra et ultrices neque ornare. Semper eget duis at tellus at urna. Mattis nunc sed blandit libero volutpat sed cras ornare arcu. Enim nunc faucibus a pellentesque sit amet porttitor eget. Non nisi est sit amet facilisis magna etiam tempor orci. Pretium fusce id velit ut tortor pretium viverra. Leo integer malesuada nunc vel risus commodo. Duis at tellus at urna condimentum mattis pellentesque. Pharetra sit amet aliquam id diam maecenas. Lacinia quis vel eros donec ac.
-
-    Consectetur libero id faucibus nisl tincidunt eget. Donec ac odio tempor orci dapibus ultrices in. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Nibh venenatis cras sed felis eget velitLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla. Et tortor at risus viverra adipiscing at in tellus. Facilisi cras fermentum odio eu. Vitae sapien pellentesque habitant morbi tristique senectus et. Maecenas ultricies mi eget mauris pharetra et ultrices neque ornare. Semper eget duis at tellus at urna. Mattis nunc sed blandit libero volutpat sed cras ornare arcu. Enim nunc faucibus a pellentesque sit amet porttitor eget. Non nisi est sit amet facilisis magna etiam tempor orci. Pretium fusce id velit ut tortor pretium viverra. Leo integer malesuada nunc vel risus commodo. Duis at tellus at urna condimentum mattis pellentesque. Pharetra sit amet aliquam id diam maecenas. Lacinia quis vel eros donec ac.
-
-    Consectetur libero id faucibus nisl tincidunt eget. Donec ac odio tempor orci dapibus ultrices in. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Nibh venenatis cras sed felis eget velitLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla. Et tortor at risus viverra adipiscing at in tellus. Facilisi cras fermentum odio eu. Vitae sapien pellentesque habitant morbi tristique senectus et. Maecenas ultricies mi eget mauris pharetra et ultrices neque ornare. Semper eget duis at tellus at urna. Mattis nunc sed blandit libero volutpat sed cras ornare arcu. Enim nunc faucibus a pellentesque sit amet porttitor eget. Non nisi est sit amet facilisis magna etiam tempor orci. Pretium fusce id velit ut tortor pretium viverra. Leo integer malesuada nunc vel risus commodo. Duis at tellus at urna condimentum mattis pellentesque. Pharetra sit amet aliquam id diam maecenas. Lacinia quis vel eros donec ac.
-
-    Consectetur libero id faucibus nisl tincidunt eget. Donec ac odio tempor orci dapibus ultrices in. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Nibh venenatis cras sed felis eget velitLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla. Et tortor at risus viverra adipiscing at in tellus. Facilisi cras fermentum odio eu. Vitae sapien pellentesque habitant morbi tristique senectus et. Maecenas ultricies mi eget mauris pharetra et ultrices neque ornare. Semper eget duis at tellus at urna. Mattis nunc sed blandit libero volutpat sed cras ornare arcu. Enim nunc faucibus a pellentesque sit amet porttitor eget. Non nisi est sit amet facilisis magna etiam tempor orci. Pretium fusce id velit ut tortor pretium viverra. Leo integer malesuada nunc vel risus commodo. Duis at tellus at urna condimentum mattis pellentesque. Pharetra sit amet aliquam id diam maecenas. Lacinia quis vel eros donec ac.
-
-    Consectetur libero id faucibus nisl tincidunt eget. Donec ac odio tempor orci dapibus ultrices in. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Nibh venenatis cras sed felis eget velitLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla. Et tortor at risus viverra adipiscing at in tellus. Facilisi cras fermentum odio eu. Vitae sapien pellentesque habitant morbi tristique senectus et. Maecenas ultricies mi eget mauris pharetra et ultrices neque ornare. Semper eget duis at tellus at urna. Mattis nunc sed blandit libero volutpat sed cras ornare arcu. Enim nunc faucibus a pellentesque sit amet porttitor eget. Non nisi est sit amet facilisis magna etiam tempor orci. Pretium fusce id velit ut tortor pretium viverra. Leo integer malesuada nunc vel risus commodo. Duis at tellus at urna condimentum mattis pellentesque. Pharetra sit amet aliquam id diam maecenas. Lacinia quis vel eros donec ac.
-
-    Consectetur libero id faucibus nisl tincidunt eget. Donec ac odio tempor orci dapibus ultrices in. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Nibh venenatis cras sed felis eget velitLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla. Et tortor at risus viverra adipiscing at in tellus. Facilisi cras fermentum odio eu. Vitae sapien pellentesque habitant morbi tristique senectus et. Maecenas ultricies mi eget mauris pharetra et ultrices neque ornare. Semper eget duis at tellus at urna. Mattis nunc sed blandit libero volutpat sed cras ornare arcu. Enim nunc faucibus a pellentesque sit amet porttitor eget. Non nisi est sit amet facilisis magna etiam tempor orci. Pretium fusce id velit ut tortor pretium viverra. Leo integer malesuada nunc vel risus commodo. Duis at tellus at urna condimentum mattis pellentesque. Pharetra sit amet aliquam id diam maecenas. Lacinia quis vel eros donec ac.
-
-    Consectetur libero id faucibus nisl tincidunt eget. Donec ac odio tempor orci dapibus ultrices in. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Nibh venenatis cras sed felis eget velitLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla. Et tortor at risus viverra adipiscing at in tellus. Facilisi cras fermentum odio eu. Vitae sapien pellentesque habitant morbi tristique senectus et. Maecenas ultricies mi eget mauris pharetra et ultrices neque ornare. Semper eget duis at tellus at urna. Mattis nunc sed blandit libero volutpat sed cras ornare arcu. Enim nunc faucibus a pellentesque sit amet porttitor eget. Non nisi est sit amet facilisis magna etiam tempor orci. Pretium fusce id velit ut tortor pretium viverra. Leo integer malesuada nunc vel risus commodo. Duis at tellus at urna condimentum mattis pellentesque. Pharetra sit amet aliquam id diam maecenas. Lacinia quis vel eros donec ac.
-
-    Consectetur libero id faucibus nisl tincidunt eget. Donec ac odio tempor orci dapibus ultrices in. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Nibh venenatis cras sed felis eget velitLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla. Et tortor at risus viverra adipiscing at in tellus. Facilisi cras fermentum odio eu. Vitae sapien pellentesque habitant morbi tristique senectus et. Maecenas ultricies mi eget mauris pharetra et ultrices neque ornare. Semper eget duis at tellus at urna. Mattis nunc sed blandit libero volutpat sed cras ornare arcu. Enim nunc faucibus a pellentesque sit amet porttitor eget. Non nisi est sit amet facilisis magna etiam tempor orci. Pretium fusce id velit ut tortor pretium viverra. Leo integer malesuada nunc vel risus commodo. Duis at tellus at urna condimentum mattis pellentesque. Pharetra sit amet aliquam id diam maecenas. Lacinia quis vel eros donec ac.
-
-    Consectetur libero id faucibus nisl tincidunt eget. Donec ac odio tempor orci dapibus ultrices in. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Nibh venenatis cras sed felis eget velitLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla. Et tortor at risus viverra adipiscing at in tellus. Facilisi cras fermentum odio eu. Vitae sapien pellentesque habitant morbi tristique senectus et. Maecenas ultricies mi eget mauris pharetra et ultrices neque ornare. Semper eget duis at tellus at urna. Mattis nunc sed blandit libero volutpat sed cras ornare arcu. Enim nunc faucibus a pellentesque sit amet porttitor eget. Non nisi est sit amet facilisis magna etiam tempor orci. Pretium fusce id velit ut tortor pretium viverra. Leo integer malesuada nunc vel risus commodo. Duis at tellus at urna condimentum mattis pellentesque. Pharetra sit amet aliquam id diam maecenas. Lacinia quis vel eros donec ac.
-
-    Consectetur libero id faucibus nisl tincidunt eget. Donec ac odio tempor orci dapibus ultrices in. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Nibh venenatis cras sed felis eget velitLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla. Et tortor at risus viverra adipiscing at in tellus. Facilisi cras fermentum odio eu. Vitae sapien pellentesque habitant morbi tristique senectus et. Maecenas ultricies mi eget mauris pharetra et ultrices neque ornare. Semper eget duis at tellus at urna. Mattis nunc sed blandit libero volutpat sed cras ornare arcu. Enim nunc faucibus a pellentesque sit amet porttitor eget. Non nisi est sit amet facilisis magna etiam tempor orci. Pretium fusce id velit ut tortor pretium viverra. Leo integer malesuada nunc vel risus commodo. Duis at tellus at urna condimentum mattis pellentesque. Pharetra sit amet aliquam id diam maecenas. Lacinia quis vel eros donec ac.
-
-    Consectetur libero id faucibus nisl tincidunt eget. Donec ac odio tempor orci dapibus ultrices in. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Nibh venenatis cras sed felis eget velitLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla. Et tortor at risus viverra adipiscing at in tellus. Facilisi cras fermentum odio eu. Vitae sapien pellentesque habitant morbi tristique senectus et. Maecenas ultricies mi eget mauris pharetra et ultrices neque ornare. Semper eget duis at tellus at urna. Mattis nunc sed blandit libero volutpat sed cras ornare arcu. Enim nunc faucibus a pellentesque sit amet porttitor eget. Non nisi est sit amet facilisis magna etiam tempor orci. Pretium fusce id velit ut tortor pretium viverra. Leo integer malesuada nunc vel risus commodo. Duis at tellus at urna condimentum mattis pellentesque. Pharetra sit amet aliquam id diam maecenas. Lacinia quis vel eros donec ac.
-
-    Consectetur libero id faucibus nisl tincidunt eget. Donec ac odio tempor orci dapibus ultrices in. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Nibh venenatis cras sed felis eget velit aliquet sagittis. Nisl pretium fusce id velit ut tortor. Ipsum dolor sit amet consectetur adipiscing elit ut. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla. Malesuada fames ac turpis egestas. Est velit egestas dui id ornare arcu odio ut. In ante metus dictum at tempor commodo ullamcorper a lacus. Vitae elementum curabitur vitae nunc sed. Velit sed ullamcorper morbi tincidunt. Facilisis sed odio morbi quis commodo odio. Tristique risus nec feugiat in fermentum. Ac auctor augue mauris augue. Etiam tempor orci eu lobortis elementum nibh tellus. A pellentesque sit amet porttitor eget dolor morbi non. Integer vitae justo eget magna fermentum iaculis eu non. Bibendum at varius vel pharetra vel turpis.</p>
 
 	<div class="footer">
     <div style="float:left">
@@ -80,8 +202,35 @@
     </div>
 </div>
 
+
+
+		 
+<script>	//for the gallery
+	var slideIndex =1;
+	showSlides(slideIndex);
 	
-		<script>
+	
+	
+	function showSlides(n)
+	{
+		var 1;
+		var slides =document.getElementsByClassName("mySlides");
+		var dots = document.getElementsByClassName("dot");
+		if(n >slides.length)
+		{
+			slideIndex=1
+		}
+		if(n<1)
+		
+	{}
+	}
+
+</script>
+		
+		
+		
+		
+		<script>//For getting the floating header to work
 	
 	// When the user scrolls the page, execute myFunction
 window.onscroll = function() {myFunction()};

@@ -1,0 +1,34 @@
+<html>
+ <head>
+ <title> sound </title>
+ <script>
+function start()
+{
+	var clip = new Audio();
+	clip.src = "shot.wav";
+	
+	clip.addEventListener("canplaythrough",function ()
+			{
+	
+	
+	
+			alert ("audio has been loaded now");
+			clip.play();
+			
+			
+			});
+			clip.addEventListener("ended", function()
+			{
+			alert ("audio is over");
+			
+			
+			});
+}
+
+
+ </script>
+ </head>
+ <body>
+ <input href="#" type="submit" onclick="start();"></input>
+ </body>
+</html>
