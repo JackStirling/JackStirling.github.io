@@ -1,8 +1,9 @@
 <html>
 <head>
-	<title> My Projects</title>
+	<title> Header and footer holder </title>
 <link rel="stylesheet" type="text/css" href="css/header.css" />
 <link rel="stylesheet" type="text/css" href="css/footer.css" />
+<link rel="stylesheet" type="text/css" href="css/canvas.css" />
 </head>
 
 <body>
@@ -22,10 +23,11 @@
 	
 
 </header>
-
-
-<a href ="sprite sheet page.html">Click here for more information</a>
-
+		<canvas id="canvas" style="background:gray" stlye:> </canvas>
+		
+	<div>
+	Meet Adventure Bob. He was created for a game that I was to create with a friend of mine, but we ended up not following through. As seen above, this is his idle animation, something that would 
+	play if they player was not moving Bob around the level
 <footer>
  
 
@@ -46,3 +48,93 @@
 </div>
 </footer>
 </body>
+<script>
+		
+		var x = 10
+		var playerImage;
+		var celNumber = 0;
+		
+			function load()
+			{
+			
+			//Alocatae a new image and assing it to the previous varible. sorts out the image
+			playerImage = new Image();
+			//loads the actual image file we want to use 
+			playerImage.src = "images/bob.png";	
+			
+			}
+			function main ()
+			
+			
+			{
+			
+			//calls load 
+			load();
+			
+			//GET HOLD OF THE THING WIITH ID OF CANVAS
+			var canvas = document.getElementById("canvas")
+			
+			//set width and height of canvas
+			canvas.width = 200;
+			canvas.height = 200;
+			
+			//create frawing contect (this is like a pen for our canvas)
+			var ctx =  canvas.getContext("2d")
+			
+			//call draw function, send ctx to it
+			draw (ctx);
+			}
+			
+			function draw(ctx)
+			{
+			
+				//set pen to gray, then draw rectangle accros whole canvas
+				ctx.fillStyle="grey"
+				ctx.fillRect(0,0,ctx.canvas.width, ctx.canvas.height)
+				
+				var celWidth = playerImage.width / 2;
+				var celHeight = playerImage.height/2;
+				
+				//draw playerimage
+				ctx.drawImage(playerImage, 
+				
+				celNumber * celWidth, 0, //where is source image to draw from
+				celWidth,celHeight, //how much of source to grab (w,h)
+				10,10, // how far into canvas to we start drawing (x,y)
+				200, 200);//how big on canvas (x,y)
+				
+				//set pen colour
+				//ctx.fillStyle= "red";
+				
+				//draw a rectangale on the canvas
+				//ctx. fillRect(x,10, 100,100)
+				
+				//add 1 onto x
+				//x++;
+				celNumber++
+				
+				if (celNumber >2)
+				{
+					celNumber = 0;
+				}
+				
+				//ask your browser to repeat the fucntion asap
+				window.requestAnimationFrame(function(){draw(ctx);});
+
+			}	
+			
+			function keydown(event)
+			{
+				if (event.key == "ArrowLeft")
+				{
+					x--; //subtract 1 from x
+				}
+				else if (event.key == "ArrowRight")
+				{
+					x++; // add 1 to x
+				}
+			}
+		
+			window.onload = main;
+			window.addEventListener("keydown", keydown);
+		</script>
