@@ -1,31 +1,63 @@
 <html>
 <head>
-	<title> My Projects</title>
+	<title>3D Models test </title>
 <link rel="stylesheet" type="text/css" href="css/header.css" />
 <link rel="stylesheet" type="text/css" href="css/footer.css" />
+
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+
 </head>
 
 <body>
 
-<div class="myheader" id="header">
 
 
+
+
+	<div style="float: left; width: 20%; background:green; min-height:1000px">
+	</div>
 	
-	<header>
-  <a href="index.html"> <img style="height: 5rem; width:5rem" src="images/logo.jpg"></a>
-	Hello and welcome to my site!
 	
-	<div style="float:right" style="position:absolute">
-	<a href="index.html"> Home</a> | 
-	<a href="projects.html"> Projects </a> | 
-	<a href="profile.html" >Designer Profile    </a>
+	<div style="float: right; width: 80%; background: grey; min-height:1000px">
 	
+	<model-viewer skybox-image="images/street.hdr" style = "height: 500 px; width: 500 px"; src="models/Gill.glb" > <!-- model keeps being really tiny, not sure why -->
+	</model-viewer>
+	
+	
+	</div>
+	
+		
+	
+	<!-- this is for a header. maybe copy? --> 
+	<div style="position:fixed; left: 0; top:0; width: 100%; height: 3rem; background: red">
+	</div>
+	
+	<!-- footer-->
+	<div style="position:fixed; left: 0; bottom:0; width: 100%; height: 2rem; background: red">
+	</div>
 
-</header>
 
 
-<a href ="sprite sheet page.html">Click here for more information</a>
-<a href ="3D test.html">Click here for more information</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <footer>
  
