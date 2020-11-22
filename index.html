@@ -28,7 +28,7 @@ margin:auto;
 
 }
 
-.prev .next {
+.prev {
 cursor: pointer;
 position:absolute;
 top:50%;
@@ -44,12 +44,31 @@ transition: 0.6s ease;
 
 }
 
+.next {
+cursor: pointer;
+position:absolute;
+top:50%;
+width:auto;
+padding:16px;
+margin-top:-22px;
+color:red;
+font-weight: bold;
+font-size: 18px;
+border-radius: 0 3px 3px 0;
+transition: 0.6s ease;
+}
+
 .next{
 	right:0;
 	border-radius:3px 0 0 3px;
 }
-.prev:hover, .next:hover{
+.prev:hover
 	background-color: rgba (0,0,0,0.8) 
+	animation:fade;
+}
+.next:hover{
+	background-color: rgba (0,0,0,0.8) 
+	animation:fade;
 }
 
 .numberText{
@@ -113,11 +132,12 @@ transition: 0.6s ease;
 
 
 </style>
-<div div class="myheader" id="header">
+<div class="myheader" id="header">
 
 
-<div >
-<a href="index.html"> <img style="height: 5rem; width:5rem" src="images/logo.jpg"></a>
+	
+	<header>
+  <a href="index.html"> <img style="height: 5rem; width:5rem" src="images/logo.jpg"></a>
 	Hello and welcome to my site!
 	
 	<div style="float:right" style="position:absolute">
@@ -126,130 +146,178 @@ transition: 0.6s ease;
 	<a href="profile.html" >Designer Proflie    </a>
 	
 </a>
+</header>
 
-
-
-	</div>
-
-	</div>
- 
-	</div>
-	
-	
 	
 	<div class="slideshow-container">
 	
 	<div class="mySlides fade">
 		<div class="numberText"> 1/4</div>
-		<img src="images/test1.jpg" style="100%">
+		<img src="images/test1.jpg" style="width: 100%">
 		<div class="text"></div>
 	</div>
-	<div class="mySlides">
+	<div class="mySlides fade">
 		<div class="numberText"> 2/4</div>
-		<img src="images/test2.jpg" style="100%">
+		<img src="images/test2.jpg" style="width: 100%">
 		<div class="text"></div>
 	</div>
-	<div class="mySlides">
+	<div class="mySlides fade">
 		<div class="numberText"> 3/4</div>
-		<img src="images/test3.jpg" style="100%">
+		<img src="images/test3.jpg" style="width: 100%">
 		<div class="text"></div>
 		
 	</div>
-	<div class="mySlides">
+	<div class="mySlides fade">
 		<div class="numberText"> 4/4</div>
-		<img src="images/test4.jpg" style="100%">
+		<img src="images/test4.jpg" style="width: 100%">
 		<div class="text"></div>
 	</div>
 	
-		<a class = "prev" onclick="">&#10094;</a>
-		<a class = "next" onclick="">&#10095;</a>
+		<!-- this is to make it not automatic 
+		<a class = "prev" onclick="plusSlides(-1) ">&#10094;</a>
+		<a class = "next" onclick="plusSlides(1)">&#10095;</a>-->
 	</div>
 
 <br>
 <div style="text-align:center">
-<span class ="dot" onclick=""></span>
-<span class ="dot" onclick=""></span>
-<span class ="dot" onclick=""></span>
-<span class ="dot" onclick=""></span>
+<!--<span class ="dot" onclick="currentSlide(1)"></span>
+<span class ="dot" onclick="currentSlide(2)"></span>
+<span class ="dot" onclick="currentSlide(3)"></span>
+<span class ="dot" onclick="currentSlide(4)"></span>-->
+
+<span class="dot"></span>
+<span class="dot"></span>
+<span class="dot"></span>
+<span class="dot"></span>
 </div>
 </br>
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-
 	<div class="footer">
-    <div style="float:left">
+    <div style="float:left; width:33%">
         <p>Copyright Jack 2020</p>
     </div>
-    <div style="float:center">
+    <div style="width:34%">
         <p>Footer</p>
     </div>
-    <div style="float:right" href>
+    <div style="float:right; width:33%" href>
         <p>Socials</p>
     </div>
 </div>
 
 
 
+	 <div>
+	 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse iaculis nisi suscipit purus vestibulum, posuere volutpat libero pharetra. Vivamus porta neque at augue tristique cursus. Vivamus rutrum porttitor orci cursus porttitor. Sed pretium eget est eget consectetur. Morbi et magna urna. Donec non ex ultricies, commodo ex et, tincidunt enim. Mauris eu volutpat magna. Praesent rhoncus ligula a dapibus pharetra. Vestibulum ornare arcu et sapien lobortis ultricies. Ut sit amet consectetur tortor.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse iaculis nisi suscipit purus vestibulum, posuere volutpat libero pharetra. Vivamus porta neque at augue tristique cursus. Vivamus rutrum porttitor orci cursus porttitor. Sed pretium eget est eget consectetur. Morbi et magna urna. Donec non ex ultricies, commodo ex et, tincidunt enim. Mauris eu volutpat magna. Praesent rhoncus ligula a dapibus pharetra. Vestibulum ornare arcu et sapien lobortis ultricies. Ut sit amet consectetur tortor.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse iaculis nisi suscipit purus vestibulum, posuere volutpat libero pharetra. Vivamus porta neque at augue tristique cursus. Vivamus rutrum porttitor orci cursus porttitor. Sed pretium eget est eget consectetur. Morbi et magna urna. Donec non ex ultricies, commodo ex et, tincidunt enim. Mauris eu volutpat magna. Praesent rhoncus ligula a dapibus pharetra. Vestibulum ornare arcu et sapien lobortis ultricies. Ut sit amet consectetur tortor.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse iaculis nisi suscipit purus vestibulum, posuere volutpat libero pharetra. Vivamus porta neque at augue tristique cursus. Vivamus rutrum porttitor orci cursus porttitor. Sed pretium eget est eget consectetur. Morbi et magna urna. Donec non ex ultricies, commodo ex et, tincidunt enim. Mauris eu volutpat magna. Praesent rhoncus ligula a dapibus pharetra. Vestibulum ornare arcu et sapien lobortis ultricies. Ut sit amet consectetur tortor.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse iaculis nisi suscipit purus vestibulum, posuere volutpat libero pharetra. Vivamus porta neque at augue tristique cursus. Vivamus rutrum porttitor orci cursus porttitor. Sed pretium eget est eget consectetur. Morbi et magna urna. Donec non ex ultricies, commodo ex et, tincidunt enim. Mauris eu volutpat magna. Praesent rhoncus ligula a dapibus pharetra. Vestibulum ornare arcu et sapien lobortis ultricies. Ut sit amet consectetur tortor.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse iaculis nisi suscipit purus vestibulum, posuere volutpat libero pharetra. Vivamus porta neque at augue tristique cursus. Vivamus rutrum porttitor orci cursus porttitor. Sed pretium eget est eget consectetur. Morbi et magna urna. Donec non ex ultricies, commodo ex et, tincidunt enim. Mauris eu volutpat magna. Praesent rhoncus ligula a dapibus pharetra. Vestibulum ornare arcu et sapien lobortis ultricies. Ut sit amet consectetur tortor.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse iaculis nisi suscipit purus vestibulum, posuere volutpat libero pharetra. Vivamus porta neque at augue tristique cursus. Vivamus rutrum porttitor orci cursus porttitor. Sed pretium eget est eget consectetur. Morbi et magna urna. Donec non ex ultricies, commodo ex et, tincidunt enim. Mauris eu volutpat magna. Praesent rhoncus ligula a dapibus pharetra. Vestibulum ornare arcu et sapien lobortis ultricies. Ut sit amet consectetur tortor.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse iaculis nisi suscipit purus vestibulum, posuere volutpat libero pharetra. Vivamus porta neque at augue tristique cursus. Vivamus rutrum porttitor orci cursus porttitor. Sed pretium eget est eget consectetur. Morbi et magna urna. Donec non ex ultricies, commodo ex et, tincidunt enim. Mauris eu volutpat magna. Praesent rhoncus ligula a dapibus pharetra. Vestibulum ornare arcu et sapien lobortis ultricies. Ut sit amet consectetur tortor.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse iaculis nisi suscipit purus vestibulum, posuere volutpat libero pharetra. Vivamus porta neque at augue tristique cursus. Vivamus rutrum porttitor orci cursus porttitor. Sed pretium eget est eget consectetur. Morbi et magna urna. Donec non ex ultricies, commodo ex et, tincidunt enim. Mauris eu volutpat magna. Praesent rhoncus ligula a dapibus pharetra. Vestibulum ornare arcu et sapien lobortis ultricies. Ut sit amet consectetur tortor.
+
+
+	 </div>
+	
 		 
-<script>	//for the gallery
-	var slideIndex =1;
-	showSlides(slideIndex);
+<script>
+	//for the gallery
+	var slideIndex = 0;
+	//showSlides(slideIndex);
+	showSlidesAuto();
+
 	
+	/* none automatic
+	function plusSlides(n){
+		showSlides(slideIndex += n);
+	}
+	function currentSlide(n){
+		showSlides (slideIndex = n);
+	} */
 	
-	
-	function showSlides(n)
+	/*function showSlides(n)
 	{
-		var 1;
+		var i;
 		var slides =document.getElementsByClassName("mySlides");
 		var dots = document.getElementsByClassName("dot");
 		if(n >slides.length)
 		{
-			slideIndex=1
+			slideIndex = 1;
 		}
-		if(n<1)
+		if(n < 1)
+		{
+			slideIndex = slides.length;	
+		}
 		
-	{}
+		for(i = 0; i < slides.length; i++)
+		{
+			slides[i].style.display = "none";
+		}
+		for(i = 0; i < dots.length; i++)
+		{
+			dots [i] .className = dots[i].className.replace(" active ","");
+		}
+		slides[slideIndex-1].style.display = "block"
+		dots[slideIndex-1].className +=  " active";
+		
 	}
-
-</script>
-		
-		
-		
-		
-		<script>//For getting the floating header to work
+showSlides() from the video automatic 
+{
+	var i;
+	var slides = document.getElementsByClassName("mySlides");
+	var dots = document.getElementsByClassName("dot");
 	
-	// When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
+	for(i = 0; i < slides.length; i++)
+	{
+			slides[i].style.display = "none";
+	}
+	slideIndex++;
+	if(slideIndex > slides.length)
+	{
+		slideIndex =1;
+	}
+	for(i = 0; i < dots.length; i++)
+	{
+		dots [i].className = dots[i].className.replace(" active ","");
+	}
+	slides[slideIndex-1].style.display = "block"
+	dots[slideIndex-1].className +=  " active";
+	setTimeout(showSlides,2000);*/
+	function showSlidesAuto() {
 
-// Get the header
-var header = document.getElementById("header");
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) { slideIndex = 1 }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+               
+                    setTimeout(showSlidesAuto, 2000); // Change image every 5 seconds
+                
+            }
 
-// Get the offset position of the navbar
-var sticky = header.offsetTop;
 
-// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
+
+
+
 </script>
+
 
 
 
