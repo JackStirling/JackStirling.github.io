@@ -2,15 +2,16 @@
 {
 
    position: fixed;
-   left: 0;
+   left: 4px;
    bottom: 0;
-   width: 100%;
+   width: 99%;
    height: 20px;
    background-color: white;
    color: black;
-   font-size: 10;
+   font-size: 20;
    text-align: center;
    border: dashed blue;
+   padding:5px;
 
 	
 }

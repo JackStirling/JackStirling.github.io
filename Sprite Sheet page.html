@@ -97,8 +97,8 @@
 				ctx.fillStyle="grey"
 				ctx.fillRect(0,0,ctx.canvas.width, ctx.canvas.height)
 				
-				var celWidth = playerImage.width / 2;
-				var celHeight = playerImage.height/2;
+				var celWidth = playerImage.width / 4;
+				var celHeight = playerImage.height;
 				
 				//draw playerimage
 				ctx.drawImage(playerImage, 
@@ -115,10 +115,14 @@
 				//ctx. fillRect(x,10, 100,100)
 				
 				//add 1 onto x
-				//x++;
-				celNumber++
+				x++;
+				if (x % 20 == 0)
+				{
+					celNumber++;
+				}
 				
-				if (celNumber >2)
+				
+				if (celNumber >3)
 				{
 					celNumber = 0;
 				}
