@@ -1,0 +1,137 @@
+commit 724c85ad1ed753ebb36ad06a660f937f22d14439
+Author: Your Name <you@example.com>
+Date:   Wed Dec 9 16:42:59 2020 +0000
+
+    Everyhitng seems to be finished. I just need to make it look pretty now. The base  the site has been completed, and is in perfectly working order. Finally got the centering down for all of the images and text, as well as made Adventure Bob a higher definition. He still isn't perfectly centred in his canvas, which still needs to be fixed
+
+commit a196c877ee55fe8e37dea9cfcdad45778c01168e
+Author: Your Name <you@example.com>
+Date:   Fri Dec 4 14:45:03 2020 +0000
+
+    Added some changes headed to the footer and the 3D modelling page thanks to some help from Pete
+
+commit cf616bdfd909699851cd1a0e0bf0ebcba7625928
+Author: Your Name <you@example.com>
+Date:   Fri Dec 4 11:54:59 2020 +0000
+
+    Added several new minor changes, mainly linked to the formatting of the website in preperation for meeting with Pete. MOstly coming together, but formatting is still causing issues
+
+commit d12c3c519dc7526f235531210fcfcaaccbeb3583
+Author: Your Name <you@example.com>
+Date:   Mon Nov 30 15:57:28 2020 +0000
+
+    Tried to fix the header and footer, but it hasn't gone vey well. I have also tired to fix te model, with horrible results. Not quite sure why it isnt working, but I am going to keep trying to fix it. I have started to add in the plain text on the different webpages to help me with the layout
+
+commit 46f8adad696985ea2e840840d4089941a67fb297
+Author: Your Name <you@example.com>
+Date:   Fri Nov 27 14:03:15 2020 +0000
+
+    added some thinks to social media sites, as well as a form for visitors to fill in if they have any questions. My websites is now complete, it is now just a matter of formatting it and fixing the header to complete it
+
+commit 1afb4595516610f945b3666fe705c932d663bf32
+Author: Your Name <you@example.com>
+Date:   Wed Nov 25 22:12:31 2020 +0000
+
+    Added sseveral new pages to increase interractivity on my webiste. Lots still to do, but mostly just formatting. Submit formpage needs to be fixed, and logos need to be added to the socails page as well. All pages are linked to each other now in one way or another
+
+commit b390d85ba5ec90e9ac046d2529f95148b90bb5a0
+Author: Your Name <you@example.com>
+Date:   Wed Nov 25 18:33:57 2020 +0000
+
+    Added more links to other pages. Also added an option to download the apk for the game. Lots of images and links to new pages
+
+commit 71f074dc74e8f166f79ac09519818ff987859fe6
+Author: Your Name <you@example.com>
+Date:   Tue Nov 24 18:07:54 2020 +0000
+
+    Minor changes
+
+commit fcfac8e899a2691a0991ecce9477e3a33479b119
+Author: Your Name <you@example.com>
+Date:   Sun Nov 22 22:36:19 2020 +0000
+
+    created the 3d model page. HAving some issues with it, so will come back at a later date to troubleshoot
+
+commit 904efddfd07632136869e911a58c9bbcff611b2f
+Author: Your Name <you@example.com>
+Date:   Sun Nov 22 18:51:48 2020 +0000
+
+    Linked te projects and sprite sheet pages together. Added the canvas animation on the sprite sheet page, but need to slow it down so you can see it proper
+
+commit 1829d4158f41951fecf955db20aeef2f1bb11ab9
+Author: Your Name <you@example.com>
+Date:   Sun Nov 22 17:58:34 2020 +0000
+
+    Quick save as I have the footers and headers working on all pages now
+
+commit cc91fe87f2fb8162abc982b2b8c6beb262f01e3d
+Author: Your Name <you@example.com>
+Date:   Sun Nov 22 17:00:25 2020 +0000
+
+    Finally got the image gallery to work. Removed sticky header as it created more issues than it was worth. Footer is now almost complete as well
+
+commit 6b17fe6fe81097d283495924b643c8a1d6a0ab92
+Author: Your Name <you@example.com>
+Date:   Sat Nov 21 22:17:34 2020 +0000
+
+    Started work on implementing the gallery on the main page
+
+commit 9568e14f8a13b8972c61844f3f9fb0fb7c256349
+Author: Your Name <you@example.com>
+Date:   Tue Nov 17 17:41:02 2020 +0000
+
+    Added footer to most pages. Slight sizing issue but mostly works. Will be adding links and fixing sizing in the future
+
+commit b546d5896c87c2c6684ca32a36a5239f5ddc769f
+Author: Your Name <you@example.com>
+Date:   Tue Nov 17 16:52:28 2020 +0000
+
+    Added header to multiple pages. Now to work on footer
+
+commit fa14518e410691c4d91d682d1fc264962e74aeab
+Author: Your Name <you@example.com>
+Date:   Tue Nov 17 15:56:53 2020 +0000
+
+    Finally sorted out the floating menu bar or scroll. To be implemented on all pages and some clean up to be done
+
+commit 476f2a885e3de47a1fe7077d9ce529e992f41d20
+Author: Your Name <you@example.com>
+Date:   Mon Nov 16 16:02:55 2020 +0000
+
+    Attempting to add the fixed menu bar. Main pages are all linked up
+
+commit 1c562d00ff418dfbbdd9c4d4c253c4cc3ecd28d9
+Author: Your Name <you@example.com>
+Date:   Mon Nov 16 15:23:01 2020 +0000
+
+    Created the first pages. Header is almost complete and the code ready to be used on all pages. Next step is adding the footer and fixing all the links
+
+commit ff7dfe8b666bfc4275f264fdc2144c33000bd0a0
+Author: Your Name <you@example.com>
+Date:   Mon Nov 16 13:25:16 2020 +0000
+
+    Testing uploading to github
+
+commit 00bbd11f3826d1461a0526d4813f607c6cd5facb
+Author: Your Name <you@example.com>
+Date:   Fri Nov 13 15:53:16 2020 +0000
+
+     added a popup
+
+commit 53123d2c8882d314ee35881b5699704993f20126
+Author: Your Name <you@example.com>
+Date:   Fri Nov 13 15:41:44 2020 +0000
+
+    added new index
+
+commit 392fc66937df365b410737f24b4787d9239ef807
+Author: Your Name <you@example.com>
+Date:   Fri Nov 13 15:29:10 2020 +0000
+
+    added the index
+
+commit 9c33974e7c78febb0e9624042562351fe7bc7d8b
+Author: JackStirling <40643020+JackStirling@users.noreply.github.com>
+Date:   Fri Nov 13 15:06:22 2020 +0000
+
+    Initial commit

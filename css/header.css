@@ -1,18 +1,14 @@
 #header
 {
 background:white;
-height: 5rem;
+min-height: 5rem;
 font-family: Calibri;
 font-size: 48;
 display: block;
 border-width: 5px;
 border-style:dashed;
 border-color:blue;
-margin-left:auto;
-margin-right:auto;
 position: fixed;
-left: 0px;
-top: 0px;
 z-index: 2;
 	
 }
@@ -20,7 +16,7 @@ z-index: 2;
 
 
 .myheader {
-  padding: 10px 16px;
+  padding: 10px;
 
 
 }
