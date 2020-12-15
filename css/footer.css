@@ -1,16 +1,16 @@
 .footer
 {
 
-   position: fixed;
-   bottom: 0;
-   width: 99%;
-   height: 20px;
-   background-color: lightgray;
-   color: black;
-   font-size: 15;
-   text-align: center;
-   border: dashed blue;
-   padding:5px;
+	position: fixed;
+	bottom: 0;
+	width: 99%;
+	height: 20px;
+	background-color: lightgray;
+	border-color: black;
+	font-size: 15;
+	text-align: center;
+	border-style: double;
+	padding:5px;
 
 	
 }
