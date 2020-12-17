@@ -2,10 +2,7 @@
   
   background: none!important;
   border: none;
-  padding: 0!important;
-  /*optional*/
-font-family: Calibri;
-  /*input has OS specific font-family*/
+  font-family: Calibri;
   color: black;
   text-decoration: underline;
   cursor: pointer;
